@@ -10,7 +10,7 @@ namespace BloblStorage.GenerateThumbnail
     public static class ProcessBlobImage
     {
         [FunctionName("ResizeImage")]
-        public static void Run([BlobTrigger("rawimages/{name}", Connection = "imageuploadprocessing_STORAGE")]Stream inputBlob,
+        public static void Run([BlobTrigger("rawimages/{name}", Connection = "AzureWebJobsStorage")]Stream inputBlob,
                                [Blob("processedimages/{name}", FileAccess.Write)]Stream outputImage,
                                 string name,
                                 ILogger log)
