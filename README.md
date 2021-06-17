@@ -13,3 +13,5 @@ The easiest way to deploy this function is from Azure Portal by navigating to yo
 ![](https://github.com/arun-mittal/azure-generate-thumbnail-blob-upload-trigger/raw/master/images/function-app-deployment.png)
 
 Alternatively, to setup 'Continuous  Integration/'Continuous  Deployment, you can clone this repository to your GitHub account (or another version control tool) and setting up the 'Source' to a ''Continuous  Deployment (CI/CD)' offering instead.
+
+Finally, you need to configure a connection string for the Azure Web Jobs Storage by adding a 'AzureWebJobsStorage' key pair value in the application settings under 'Configuration' in the 'Settings' node.
