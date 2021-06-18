@@ -5,7 +5,7 @@ using System.Drawing;
 using Microsoft.Azure.WebJobs;
 using Microsoft.Extensions.Logging;
 
-namespace BloblStorage.GenerateThumbnail
+namespace BlobStorage.GenerateThumbnail
 {
     public static class ProcessBlobImage
     {
